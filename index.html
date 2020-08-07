@@ -37,7 +37,7 @@
 
 <body>
 <div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v8.0&appId=440888816482641&autoLogAppEvents=1" nonce="LraQvz0l"></script>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v8.0&amp;appId=440888816482641&amp;autoLogAppEvents=1" nonce="LraQvz0l"></script>
   <!--==========================
     Header
   ============================-->
@@ -656,10 +656,11 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form action="https://formspree.io/xqkynrpo"
+                method="POST" role="form" class="contactForm">
             <div class="form-row">
               <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 characters" />
                 <div class="validation"></div>
               </div>
               <div class="form-group col-md-6">
@@ -668,7 +669,7 @@
               </div>
             </div>
             <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 characters of subject" />
               <div class="validation"></div>
             </div>
             <div class="form-group">
@@ -773,7 +774,7 @@
   <script src="lib/lightbox/js/lightbox.min.js"></script>
   <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+<!--  <script src="contactform/contactform.js"></script>-->
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
